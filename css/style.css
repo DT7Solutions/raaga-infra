@@ -8956,7 +8956,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       -o-transition: all 0.5s ease 0s;
       transition: all 0.5s ease 0s;
       display: inline-block;
-      text-align: center; }
+      text-align: center; 
+  
+    }
       .ltn__feature-item-2 .ltn__feature-icon span::before, .ltn__feature-item-2 .ltn__feature-icon span::after {
         position: absolute;
         content: "";
@@ -14520,4 +14522,18 @@ input.cart-plus-minus-box {
 
 .section-title-area p {
   text-align: justify !important;
+}
+
+.service-options ul li {
+  color: rgb(122, 119, 119);
+  font-weight: 700;
+  list-style: none;
+  position: relative;
+}
+.service-options ul li .fa-check-circle{
+  color: #008080;
+}
+
+.service-work-flow span{
+  color: rgb(204, 86, 18) !important;
 }
