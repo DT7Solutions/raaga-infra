@@ -2226,7 +2226,8 @@ ul {
 
 .plr--5 {
   padding-left: 5%;
-  padding-right: 5%; }
+  padding-right: 5%; 
+}
 
 .plr--6 {
   padding-left: 6%;
@@ -8443,7 +8444,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../img/bg/21.jpg);
+    background-image: url(../img/bg/sai-mythri-builders-home-page-on-going-project-my-home-brundavan-image-1536x1041.jpg);
     height: 100%;
     width: 48%;
     left: auto;
@@ -14494,6 +14495,24 @@ input.cart-plus-minus-box {
 
 /*# sourceMappingURL=style.css.map */
 
-.header-background {
-  background: transparent;
+@media (max-width: 1599px) {
+  .about-sec-title {
+    font-size: 40px;
+  }
+}
+
+.about-sec-title-2 {
+  margin-bottom: 10px;
+}
+
+.logo-border {
+  border-radius: 5px;
+}
+
+.footer-link ul li{
+  margin-bottom: 0px;
+}
+
+.section-title-area p {
+  text-align: justify !important;
 }
