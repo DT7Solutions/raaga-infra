@@ -9164,7 +9164,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
       transition: all 0.3s ease 0s; }
   .ltn__feature-item-6 .ltn__feature-info p {
     font-size: 14px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .ltn__feature-item-6 .ltn__feature-info p + p {
     margin-top: 15px; }
   .ltn__feature-item-6 .ltn__feature-info .ltn__service-btn {
