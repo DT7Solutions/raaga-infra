@@ -1510,7 +1510,8 @@ ul {
   background: rgba(0, 0, 0, 0.2); }
 
 .bg-overlay-black-30:before {
-  background: rgba(0, 0, 0, 0.3); }
+  background: rgba(2, 12, 22, 0.726); 
+}
 
 .bg-overlay-black-40:before {
   background: rgba(0, 0, 0, 0.4); }
@@ -3208,7 +3209,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 ---------------------------------------------------- */
 .ltn__breadcrumb-area {
   background-color: var(--section-bg-1);
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
   padding-top: 110px;
   padding-bottom: 110px; }
 
@@ -8444,7 +8445,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(../img/bg/sai-mythri-builders-home-page-on-going-project-my-home-brundavan-image-1536x1041.jpg);
+    background-image: url(../img/home/raga-infra-builders-home-page-on-going-project-my-home-brundavan-image-1536x1041.jpg);
     height: 100%;
     width: 48%;
     left: auto;
