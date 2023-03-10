@@ -14538,3 +14538,30 @@ input.cart-plus-minus-box {
 .service-work-flow span{
   color: rgb(204, 86, 18) !important;
 }
+
+.ltn__main-menu ul > li.active > a{
+  color: #9c9a9a !important;
+}
+
+@media (max-width: 480px) {
+  .para-text {
+    width: 100%;
+    text-align: justify;
+    font-weight: 800 !important;
+  }
+
+  .pad-bot {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .para-text {
+    width: 45%;
+    text-align: justify;
+
+  }
+  .pad-bot {
+    padding-bottom: 70px;
+  }
+}
