@@ -14565,3 +14565,15 @@ input.cart-plus-minus-box {
     padding-bottom: 70px;
   }
 }
+
+.before-bg-bottom {
+    /* position: relative; */
+    padding-top: 20px;
+    padding-bottom: 190px;
+}
+
+.footer-top-area {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-top: -70px;
+}
