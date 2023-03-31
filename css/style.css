@@ -14577,3 +14577,41 @@ input.cart-plus-minus-box {
   padding-bottom: 20px;
   margin-top: -70px;
 }
+
+@media (max-width: 767px) {
+.ltn__header-4 .ltn__header-options, .ltn__header-5 .ltn__header-options {
+    margin-left: 0;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 0%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}
+
+@media (max-width: 767px){
+.ltn__header-4 .site-logo-wrap, .ltn__header-5 .site-logo-wrap {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    margin: 10px 0 30px;
+}
+}
+
+.ltn__header-4 .ltn__header-middle-area, .ltn__header-5 .ltn__header-middle-area {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.ltn__header-4 .ltn__header-middle-area.sticky-active, .ltn__header-5 .ltn__header-middle-area.sticky-active {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.ltn__contact-address-item-3 .ltn__contact-address-icon img {
+  max-width: 50px;
+}
