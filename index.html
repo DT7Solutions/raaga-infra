@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -234,6 +236,9 @@
                             </div>
                             <div class="input-item input-item-textarea ltn__custom-icon">
                                 <textarea name="message" placeholder="Enter message"></textarea>
+                            </div>
+                            <div class="form-group col mb-3-5 col-md-12">
+                                <div class="g-recaptcha" data-sitekey="6LeEiDQiAAAAANKmnpnU1TqHCpRhgnEqu87IDUCp"></div>
                             </div>
                             <div class="btn-wrapper mt-0">
                                 <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">send request</button>
@@ -659,6 +664,7 @@
     </div>
     <!-- BRAND LOGO AREA END -->
 
+
     <!-- FOOTER AREA START -->
 
     <footer class="ltn__footer-area  ">
@@ -800,6 +806,15 @@
     gtag('js', new Date());
 
     gtag('config', 'G-Z7LWN6YCWG');
+    </script>
+
+    <script>
+        var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+    
+    myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+    })
     </script>
   
 </body>

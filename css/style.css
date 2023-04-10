@@ -14615,3 +14615,27 @@ input.cart-plus-minus-box {
 .ltn__contact-address-item-3 .ltn__contact-address-icon img {
   max-width: 50px;
 }
+
+.modal-backdrop.show {
+    opacity: 0 !important;
+}
+.modal-backdrop.show {
+    opacity: 0 !important;
+}
+
+.pop-up {
+  display: block !important;
+  width: 100% !important;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid #495057 !important;
+  border-radius: 0.25rem !important;
+  margin-bottom: 0px !important;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
