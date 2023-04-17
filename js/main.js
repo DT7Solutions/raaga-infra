@@ -2035,7 +2035,7 @@ sub_btn.addEventListener('submit', function(event){
        Host : "smtp.elasticemail.com",
        Username : "raagainfra.website@gmail.com",
        Password : "53D36010792280C9D90A5D421B21F726B4D0",
-       To : 'priya4241honey@gmail.com',
+       To : 'raagainfra.website@gmail.com',
        From : "raagainfra.website@gmail.com",
        Subject :"get a quote",
        Body :"Name:"+ fname +"<br/> For email:" + email +"<br/> Subject:" + subject +"<br/> Message:"
