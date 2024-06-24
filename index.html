@@ -213,37 +213,52 @@
                     </div>
                 </div>
                 <div class="col-lg-5 align-self-center">
-                    <div class="get-a-quote-wrap">
+                    <div class="get-a-quote-wrap ltn__form-box">
                         <h2>Request a Free Estimate</h2>
-                        <form action="#" class="get-a-quote-form">
-                            <div class="input-item input-item-name ltn__custom-icon">
-                                <input type="text" placeholder="Enter your name" required>
-                            </div>
-                            <div class="input-item input-item-email ltn__custom-icon">
-                                <input type="email" placeholder="Enter your email"required>
-                            </div>
-                            <div class="input-item input-item-phone ltn__custom-icon">
-                                <input type="text" placeholder="Enter Phone number"required>
-                            </div>
-                            <div class="input-item">
-                                <select class="nice-select" id="select" name="select" required>
-                                    <option>Select Service Type</option>
-                                    <option value="job">Job</option>
-                                    <option value="work">Work</option>
-                                    <option value="marketing">Marketing</option>
-                                    <option value="others">Others</option>
-                                </select>
-                            </div>
-                            <div class="input-item input-item-textarea ltn__custom-icon">
-                                <textarea name="message" placeholder="Enter message"></textarea>
-                            </div>
-                            <div class="form-group col mb-3-5 col-md-12">
-                                <div class="g-recaptcha" data-sitekey="6LdL3oIlAAAAAIvlHfdyRY1pfeCBj-4mImsCthZj"></div>
-                            </div>
-                            <div class="btn-wrapper mt-0">
-                                <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">send request</button>
-                            </div>
-                        </form>
+                        <form class="myform" method="post" id="contact-form"> 
+                        
+                            <div class="row">
+                               <div class="col-md-12">
+                                   <div class="input-item input-item-name ltn__custom-icon">
+                                       <input type="text" name="Name" id="name"placeholder="Enter your name" required>
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                   <div class="input-item input-item-email ltn__custom-icon">
+                                       <input type="email" id="email"name="email" placeholder="Enter email address" required>
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                   <div class="input-item">
+                                       <select class="nice-select" id="opselection"name="opselection">
+                                           <option>Purpose of Contact</option>
+                                           <option value="purchasehouse">Purchase House</option>
+                                           <option value="enquire">Enquire</option>
+                                           <option value="civilestimate">Civil Estimate</option>
+                                           <option value="marketing">Marketing</option>
+                                           <option value="job">Job</option>
+                                           <option value="others">Others</option>
+                                       </select>
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                   <div class="input-item input-item-phone ltn__custom-icon">
+                                       <input type="text" id="phone" name="phone" placeholder="Enter phone number" pattern="[6-9]{1}[0-9]{9}" required>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="input-item input-item-textarea ltn__custom-icon">
+                               <textarea id="message" name="message" placeholder="Enter message" required></textarea>
+                           </div>
+                           <div class="form-group col mb-3-5 col-md-12">
+                               <div class="g-recaptcha" data-sitekey="6LdL3oIlAAAAAIvlHfdyRY1pfeCBj-4mImsCthZj"></div>
+                           </div>
+                           <div class="btn-wrapper mt-0">
+                               <button class="btn theme-btn-1 btn-effect-1 text-uppercase" id="sendingmails" type="submit">Send Request</button>
+                           </div>
+                           <p class="form-messege mb-0 mt-20"></p>
+                    
+                       </form>
                     </div>
                 </div>
             </div>
@@ -793,6 +808,8 @@
     <script src="js/plugins.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <!-- Contact Form -->
+    <script src="js/contact.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7LWN6YCWG"></script>
@@ -812,7 +829,14 @@
         myInput.focus()
     })
     </script>
-  
+    <!-- Email JS Contact Form CDN Link-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // emailjs.init("Account Public Key");
+            emailjs.init("CycszZ79ENJ6Pn-st");
+        })();
+    </script>
 </body>
 </html>
 

@@ -189,7 +189,7 @@
                 <div class="col-lg-12">
                     <div class="ltn__form-box contact-form-box box-shadow white-bg">
                         <h4 class="title-2">Get A Quote</h4>
-                        <form class="myform" method="post"> 
+                        <form class="myform" method="post" id="contact-form"> 
                         
                              <div class="row">
                                 <div class="col-md-6">
@@ -205,11 +205,13 @@
                                 <div class="col-md-6">
                                     <div class="input-item">
                                         <select class="nice-select" id="opselection"name="opselection">
-                                            <option>Select Service Type</option>
-                                            <option value="Job">Job</option>
-                                            <option value="Work">Work</option>
-                                            <option value="Marketing">Marketing</option>
-                                            <option value="Others">Others</option>
+                                            <option>Purpose of Contact</option>
+                                            <option value="purchasehouse">Purchase House</option>
+                                            <option value="enquire">Enquire</option>
+                                            <option value="civilestimate">Civil Estimate</option>
+                                            <option value="marketing">Marketing</option>
+                                            <option value="job">Job</option>
+                                            <option value="others">Others</option>
                                         </select>
                                     </div>
                                 </div>
@@ -491,7 +493,14 @@
         myInput.focus()
     })
     </script>
-  
+    <!-- Email JS Contact Form CDN Link-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // emailjs.init("Account Public Key");
+            emailjs.init("CycszZ79ENJ6Pn-st");
+        })();
+    </script>
 </body>
 </html>
 
