@@ -8438,19 +8438,37 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-repeat: no-repeat; }
 
 .bg-image-right-before {
-  position: relative; }
-  .bg-image-right-before::before {
-    position: absolute;
-    content: "";
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url(../img/home/raga-infra-builders-home-page-on-going-project-my-home-brundavan-image-1536x1041.jpg);
-    height: 100%;
-    width: 48%;
-    left: auto;
-    right: 0;
-    top: 0; }
+  position: relative; 
+}
+.bg-image-right-before::before {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/projects/raga-infra-builders-project-page-on-going-project-one-image-1536x1041.png);
+  height: 100%;
+  width: 50%;
+  left: auto;
+  right: 0;
+  top: 0; 
+}
+.bg-image-left-before {
+  position: relative; 
+}
+.bg-image-left-before::before {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/projects/raga-infra-builders-project-page-on-going-project-second-image-1536x1041.png);
+  height: 100%;
+  width: 50%;
+  left: 0;
+  right: auto;
+  top: 0; 
+}
 
 .nice-select .option {
   font-weight: 400; }
@@ -8458,9 +8476,43 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* Responsive Device under :991px. */
 @media (max-width: 991px) {
   .bg-image-top {
-    background-size: inherit; }
-  .bg-image-right-before::before {
-    display: none; } }
+    background-size: inherit; 
+  }
+  .bg-image-right-before .about-us-info-wrap {
+    width: 50%;
+  }
+  .bg-image-left-before .about-us-info-wrap {
+    width: 50%;
+    margin-left: 55% !important;
+  }
+  .about-us-info-wrap .ltn__list-item-half li {
+    width: 100% !important;
+    margin-top: 2.5% !important;
+  }
+  }
+  /* Responsive Device under :575px. */
+@media (max-width: 575px) {
+  .bg-image-right-before::before,
+  .bg-image-left-before::before {
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+    height: 50%;
+  }
+  .bg-image-right-before .about-us-info-wrap {
+    margin-top: 75%;
+    width: 100%;
+  }
+  .bg-image-left-before .about-us-info-wrap {
+    margin-top: 75%;
+    width: 100%;
+    margin-left: 0% !important;
+  }
+  .about-us-info-wrap .ltn__list-item-half li {
+    width: 100% !important;
+    margin-top: 2.5% !important;
+  }
+  }
 
 .ltn__social-media-4 ul {
   margin: 0;
@@ -14638,4 +14690,23 @@ input.cart-plus-minus-box {
   border-radius: 0.25rem !important;
   margin-bottom: 0px !important;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
+/* Style for the modal close button */
+.close:not(:focus-visible), 
+.close:not(:disabled):not(.disabled):focus, 
+.close:not(:disabled):not(.disabled):hover {
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  opacity: 1 !important;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  outline: none;
+}
+.close span {
+  font-size: 25px;
 }
